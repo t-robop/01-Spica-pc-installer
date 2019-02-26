@@ -36,7 +36,7 @@ Function InstallIntellij {
 
 Function SetSpicapc{
     Write-Host "Unzip Spica-pc"
-    Expand-Archive $ScriptDir\ideaIC-2018.3.4.win.zip $ScriptDir
+    #Expand-Archive $ScriptDir\ideaIC-2018.3.4.win.zip $ScriptDir
     Write-Host "Done."
 }
 
@@ -46,7 +46,7 @@ if (([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]:
     $ScriptDir = Split-Path $MyInvocation.MyCommand.Path
     InstallJdk
     InstallIntellij
-    SetSpicapc
+    #SetSpicapc
     Write-Host "Finish install script!!"
 }
 
